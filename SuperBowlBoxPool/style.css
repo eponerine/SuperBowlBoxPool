@@ -1,0 +1,263 @@
+body
+{
+	background-image:url('images/bg.gif');
+}
+
+a:link      { text-decoration:none; color:#FFF}
+a:visited   { text-decoration:none; color:#FFF}
+a:hover     { text-decoration:none; color:#FFF}
+a:active    { text-decoration:none; color:#FFF}
+
+
+div.credits
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:small;	
+	
+	position:absolute;
+	bottom:5px;
+	left:5px;
+}
+
+div.logout
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:small;	
+	
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+
+div.superbowl_logo
+{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	z-index:-1;
+}
+
+div.content
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	width:1200px;
+	margin:0px auto;
+	text-align:center;
+}
+
+table.header
+{
+	width:100%;
+	border:none;
+	border-collapse:collapse;
+}
+
+td.logo
+{
+	width:100%;
+	text-align:center;
+}
+
+table.info
+{
+	margin:0px auto;
+	width:500px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 10px;
+
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12pt;
+	font-weight: bold;
+	color:#FFF;
+}
+
+table.error
+{
+	margin:0px auto;
+	width:500px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 10px;
+	text-align: center;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	background-image:url('images/table_bg_error.png');
+}
+
+table.message
+{
+	margin:0px auto;
+	width:500px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 10px;
+	text-align: center;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	background-image:url('images/table_bg_message.png');
+}
+
+table.grid
+{
+	margin:0px auto;
+	width:1250px;
+	height:800px;
+	border:dashed thick;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 10px;
+    table-layout: fixed;
+	
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	background-image:url('images/table_bg.png');
+}
+
+td.grid_boxes
+{
+	margin:0px auto;
+	width:100px;
+	height:66px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 2px;
+	background:none;
+    font-size: 10pt;
+}
+
+td.grid_boxes_occupied
+{
+	margin:0px auto;
+	width:100px;
+	height:66px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 2px;
+	background:none;
+    font-size: 10pt;
+}
+
+td.grid_boxes_horz
+{
+	margin:0px auto;
+	height:80px;
+	border:none;
+	border-style:none;
+	border-color:#FFF;
+	padding: 10px;
+	background:url('images/top.png');
+}
+
+td.grid_boxes_vert
+{
+	margin:0px auto;
+    width:150px;
+	border:none;
+	border-style:none;
+	border-color:#FFF;
+	padding: 10px;
+	background:url('images/side.png');
+    background-repeat: no-repeat;
+}
+
+td.grid_boxes_numbers
+{
+	margin:0px auto;
+	width:100px;
+	height:66px;
+	padding: 10px;
+}
+
+td.grid_boxes_empty
+{
+	margin:0px auto;
+	width:100px;
+	height:66px;
+	border:none;
+	border-style:none;
+	border-color:#FFF;
+	padding: 2px;
+}
+
+td.grid_boxes_header
+{
+	margin:0px auto;
+	width:100px;
+	height:15px;
+	border:none;
+	border-style:none;
+	border-color:#FFF;
+	padding: 2px;
+}
+
+td.grid_boxes:hover
+{
+	margin:0px auto;
+	width:100px;
+	height:66px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 2px;
+	background-color:#03066D;
+}
+
+
+td.grid_boxes_occupied:hover
+{
+	margin:0px auto;
+	width:100px;
+	height:66px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 2px;
+    background-color:#863636;
+}
+
+table.generic
+{
+	margin:0px auto;
+	width:800px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 10px;
+	
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	background-image:url('images/table_bg.png');
+}
+
+table.login
+{
+	margin:0px auto;
+	width:500px;
+	border:dashed thin;
+	border-style:dashed;
+	border-color:#FFF;
+	padding: 10px;
+	
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	background-image:url('images/table_bg.png');
+}
+
+td.login_label
+{
+	text-align:right;
+}
+
+td.login_data
+{
+	text-align:left;
+}
