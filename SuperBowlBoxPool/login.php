@@ -1,7 +1,7 @@
 <?php
 
 	$u = $_POST['username'];
-	$p = sha1($_POST['password']);
+	$p = sha256($_POST['password']);
 
 	include("includes/database_factory.php");
 
