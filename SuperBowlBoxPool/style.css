@@ -8,13 +8,17 @@ a:visited   { text-decoration:none; color:#FFF}
 a:hover     { text-decoration:none; color:#FFF}
 a:active    { text-decoration:none; color:#FFF}
 
+img.logo
+{
+	padding:5px;
+}
 
 div.credits
 {
 	font-family:Verdana, Geneva, sans-serif;
 	color:#FFF;
-	font-size:small;	
-	
+	font-size:small;
+
 	position:absolute;
 	bottom:5px;
 	left:5px;
@@ -24,8 +28,8 @@ div.logout
 {
 	font-family:Verdana, Geneva, sans-serif;
 	color:#FFF;
-	font-size:small;	
-	
+	font-size:small;
+
 	position:absolute;
 	top:5px;
 	right:5px;
@@ -46,6 +50,34 @@ div.content
 	width:1200px;
 	margin:0px auto;
 	text-align:center;
+}
+
+div.content_div
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	text-align:center;
+}
+
+div.content_faq
+{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+}
+
+span.paid
+{
+	color: #329932;
+}
+
+span.AFC
+{
+	color: #FF0000;
+}
+
+span.NFC
+{
+	color: #4286f4;
 }
 
 table.header
@@ -114,7 +146,7 @@ table.grid
 	border-color:#FFF;
 	padding: 10px;
     table-layout: fixed;
-	
+
 	font-family:Verdana, Geneva, sans-serif;
 	color:#FFF;
 	background-image:url('images/table_bg.png');
@@ -232,7 +264,7 @@ table.generic
 	border-style:dashed;
 	border-color:#FFF;
 	padding: 10px;
-	
+
 	font-family:Verdana, Geneva, sans-serif;
 	color:#FFF;
 	background-image:url('images/table_bg.png');
@@ -246,7 +278,7 @@ table.login
 	border-style:dashed;
 	border-color:#FFF;
 	padding: 10px;
-	
+
 	font-family:Verdana, Geneva, sans-serif;
 	color:#FFF;
 	background-image:url('images/table_bg.png');
@@ -260,4 +292,86 @@ td.login_label
 td.login_data
 {
 	text-align:left;
+}
+
+/*********************/
+/* OMG NEW DIV STUFF */
+/*********************/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	/* margin: 1% 0 1% .5%; */
+	margin: .25%
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF ELEVEN  */
+
+.span_1_of_11 {
+  width: 8.1%;
+	height: 5vh;
+
+	font-size: 1vw;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 5vh;
+
+	border: dashed 1px white;
+	border-style: dashed;
+	color: #FFFFFF;
+}
+
+.span_1_of_11:hover {
+  width: 8.1%;
+	height: 5vh;
+
+	font-size: 1vw;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 5vh;
+
+	border: dashed 1px white;
+	border-style: dashed;
+	color: #FFFFFF;
+	background-color: rgba(85, 85, 85, 0.5);
+
+
+}
+
+.span_1_of_11_header {
+  width: 8.1%;
+	height: 5vh;
+
+	padding-left: 1px;
+	padding-right: 1px;
+
+  font-size: 1vw;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 5vh;
+
+	color: #FFFFFF;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 100px) {
+	.col {  margin: 1% 0 1% 0%; }
+
+    .span_1_of_11, .span_2_of_11, .span_3_of_11, .span_4_of_11, .span_5_of_11, .span_6_of_11, .span_7_of_11, .span_8_of_11, .span_9_of_11, .span_10_of_11, .span_11_of_11 {
+	width: 100%;
+	}
 }

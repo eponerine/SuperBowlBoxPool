@@ -7,44 +7,49 @@
 		private $dbpassword	= "mysql_password";
 		private $dbdatabase = "mysql_database";
 		
-		private $dbconnection = "";
+		private $dbconnection;
 		
 		public function __construct()
 		{
-			$dbconnection = $this->connect();
-			$this->select_db($dbconnection);
+			$this->dbconnection = $this->connect();
 		}
 		
 		private function connect()
 		{
-			return mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword) or die("Error connecting to MySQL");
+			$link = mysqli_connect($this->dbhost, $this->dbuser, $this->dbpassword, $this->dbdatabase);
+
+			if (!$link) {
+				echo "Error: Unable to connect to MySQL.";
+			}
+
+			return $link;
 		}
 		
 		private function select_db()
 		{
-			mysql_select_db($this->dbdatabase) or die("Error selecting database");
+			mysqli_select_db($this->dbdatabase) or die("Error selecting database!");
 		}
 		
 		public function close()
 		{
-			mysql_close($this->dbconnection) or die("Cannot close MySQL connection.");
+			mysqli_close($this->dbconnection) or die("Cannot close MySQL connection.");
 		}
 		
 		private function sanitize($string)
 		{
-			return @mysql_real_escape_string(stripslashes($string));
+			return mysqli_real_escape_string($this->dbconnection,stripslashes($string));
 		}
 		
 		public function query($sql)
 		{
-			return @mysql_query($sql);
+			return mysqli_query($this->dbconnection,$sql);
 		}
 		
 		public function get_all_rows($sql)
 		{
-			$result = @mysql_query($this->sanitize($sql));
+			$result = mysqli_query($this->dbconnection,$this->sanitize($sql));
 			
-			return mysql_fetch_array($result);
+			return mysqli_fetch_array($result);
 		}
 	}
 
