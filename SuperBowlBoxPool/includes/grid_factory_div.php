@@ -1,6 +1,6 @@
 <?php
 
-	class grid_factory
+	class grid_factory_div
 	{
 		private $database;
 
@@ -102,7 +102,7 @@
 
 			while ($row = mysqli_fetch_array($result))
 			{
-				$cash += 20;
+				$cash += 10;
 
 				if ($row[1] != "")
 				{

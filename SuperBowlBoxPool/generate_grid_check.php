@@ -18,7 +18,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <LINK href="style.css" rel="stylesheet" type="text/css">
 
-<title>Super Bowl Box Pool - Administrator Settings</title>
+<title>Super Bowl Box Pool - Reset Grid Check</title>
 </head>
 
 <body>
@@ -29,22 +29,13 @@
 
 		<table class="generic">
         	<tr>
-            	<td><strong>Administrator Tools:</strong></td>
+            	<td><strong>Are you sure you want to RESET THE GRID?</strong></td>
             </tr>
             <tr>
-            	<td><a href="generate_grid_check.php">☢ Table Reset/Reload ☢</a></td>
-            </tr>
-						<tr>
-            	<td><a href="view_grid.php">View Grid</a></td>
+            	<td><a href="generate_grid.php">☢ YES ☢</a></td>
             </tr>
             <tr>
-            	<td><a href="generate_numbers.php">Generate Numbers</a></td>
-            </tr>
-            <tr>
-            	<td><a href="display_emails.php">Display Emails</a></td>
-            </tr>
-            <tr>
-            	<td><a href="display_unpaid.php">Update/Display Unpaid Status</a></td>
+            	<td><a href="admin.php">No</a></td>
             </tr>
         </table>
 

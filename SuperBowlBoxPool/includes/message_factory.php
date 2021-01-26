@@ -44,7 +44,7 @@
 			switch($e)
 			{
 				case 1:
-					$msg = "Grid truncation and recreation complete.";
+					$msg = "Grid truncation and recreation complete. We created a backup for you, so check MySQL database for it in case you need to fix something!";
 					break;
 				case 2:
 					$msg = "Logged out successfully.";

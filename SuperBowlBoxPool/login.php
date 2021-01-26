@@ -1,7 +1,7 @@
 <?php
 
 	$u = $_POST['username'];
-	$p = sha256($_POST['password']);
+	$p = hash("sha256",($_POST['password']));
 
 	include("includes/database_factory.php");
 
@@ -17,13 +17,13 @@
 	}
 
 	//Empty return set
-	if (mysql_num_rows($result) == 0)
+	if (mysqli_num_rows($result) == 0)
 	{
 		header("Location: http://www.erniecosta.com/superbowl/index.php?error=1");
 	}
 	else	//Username and PW combo exist... check if admin or not, redirect
 	{
-		$row = mysql_fetch_assoc($result);
+		$row = mysqli_fetch_assoc($result);
 
 		if ($row['is_admin'] == 1)
 		{
