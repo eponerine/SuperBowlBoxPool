@@ -150,7 +150,7 @@
 			$this->database->query("TRUNCATE TABLE `boxes`");
 
 			//Reload all 100 boxes
-			for ($i = 0; $i <= 100; $i++)
+			for ($i = 1; $i <= 100; $i++)
 			{
 				$this->database->query("INSERT INTO `boxes` (`id`, `name`, `email`, `is_paid`) VALUES ('$i', '', '', 0);");
 			}
